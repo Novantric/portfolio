@@ -9,42 +9,82 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
-        <link rel="stylesheet" href="./scss/modules/_normalize.scss">
         <link rel="stylesheet" href="./css/application.css">
         <script src="" type="text/javascript" defer></script>
     </head>
     
     <body>
         <header>
+            <img src="" alt="Header Image">
             <div class="nav-links">
                 <ul>
-                    <li><a href="about.html">Who am I?</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="code.html">Coding Examples</a></li>
-                    <li><a href="scs.html">SCS Scheme</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li class="nav-link-item"><a href="#about">Who am I?</a></li>
+                    <li class="nav-link-item"><a href="#portfolio">Portfolio</a></li>
+                    <!-- Show code examples on popup in portfolio -->
+                    <li class="nav-link-item nav-link-external"><a href="https://www.netmatters.co.uk/train-for-a-career-in-tech">SCS Scheme</a></li>
+                    <li class="nav-link-item"><a href="#contact">Contact</a></li>
                 </ul>
             </div>
-
             <div class="nav-socials">
-
+                <a href="#" id="social-ig" class="nav-social-button">Instagram</a>
+                <a href="#" id="social-bs" class="nav-social-button">Bluesky</a>
+                <a href="#" id="social-ln" class="nav-social-button">LinkedIn</a>
             </div>
         </header>
     
-        <!-- Sidebar -->
-        <aside>
-
-        </aside>
-
         <!-- Main Content -->
         <main>
-            <h1>Test</h1>
-            <p>Test2</p>
-            <p>Test3</p>
+            <div class="intro-banner" id="about">
+                <div class="intro-banner-text">
+                    <h1>My Name</h1>
+                    <p>I'm a</p>
+                </div>
+                <div class="intro-banner-scroll">
+                    <p>Scroll Down</p>
+                    <div><!-- arrow icon --></div>
+                </div>
+            </div>
+
+            <div class="project-showcase" id="portfolio">
+                <article class="project-showcase-item">
+                    <img src="" alt="">
+                    <div class="project-showcase-item--text">
+                        <h3>Project</h3>
+                        <p>Description</p>
+                    </div>
+                </article>
+                <article class="project-showcase-item">
+                    <img src="" alt="">
+                    <div class="project-showcase-item--text">
+                        <h3>Project</h3>
+                        <p>Description</p>
+                    </div>
+                </article>
+                <article class="project-showcase-item">
+                    <img src="" alt="">
+                    <div class="project-showcase-item--text">
+                        <h3>Project</h3>
+                        <p>Description</p>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="contact-form" id="contact">
+                <div class="contact-form-info">
+                    
+                </div>
+                <form action="">
+
+                </form>
+            </div>
+
         </main>
     
         <footer>
-            
+            <div class="footer-to-top">
+                <div><!-- arrow icon --></div>
+                <p>Back to Top</p>
+            </div>
         </footer>
     </body>
 </html>
