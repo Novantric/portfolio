@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>TITLE</title>
+        <title>Harry's Portfolio!</title>
         <link rel="shortcut icon" href="" type="image/x-icon">
 
         <meta charset="utf-8">
@@ -22,7 +22,7 @@
                     <li class="nav-link-item"><a href="#portfolio">Portfolio</a></li>
                     <!-- Show code examples on popup in portfolio -->
                     <li class="nav-link-item nav-link-external"><a href="https://www.netmatters.co.uk/train-for-a-career-in-tech">SCS Scheme</a></li>
-                    <li class="nav-link-item"><a href="#contact">Contact</a></li>
+                    <li class="nav-link-item nav-link-highlight"><a href="#contact">Contact</a></li>
                 </ul>
             </div>
             <div class="nav-socials">
@@ -30,6 +30,8 @@
                 <a href="#" id="social-bs" class="nav-social-button">Bluesky</a>
                 <a href="#" id="social-ln" class="nav-social-button">LinkedIn</a>
             </div>
+
+            <button type="menu">Menu</button>
         </header>
     
         <!-- Main Content -->
@@ -41,27 +43,40 @@
                 </div>
                 <div class="intro-banner-scroll">
                     <p>Scroll Down</p>
-                    <div><!-- arrow icon --></div>
+                    <span><!-- arrow icon --></span>
                 </div>
             </div>
 
             <div class="project-showcase" id="portfolio">
+                <div class="section-heading">
+                    <h1>My Projects</h1>
+                    <h2><a href="code.html">More Projects</a></h2>
+                </div>
                 <article class="project-showcase-item">
-                    <img src="" alt="">
+                    <div class="project-showcase-item--image">
+                        <img src="" alt="Image">
+                        <p>Image Label</p>
+                    </div>
                     <div class="project-showcase-item--text">
                         <h3>Project</h3>
                         <p>Description</p>
                     </div>
                 </article>
                 <article class="project-showcase-item">
-                    <img src="" alt="">
+                    <div class="project-showcase-item--image">
+                        <img src="" alt="Image">
+                        <p>Image Label</p>
+                    </div>
                     <div class="project-showcase-item--text">
                         <h3>Project</h3>
                         <p>Description</p>
                     </div>
                 </article>
                 <article class="project-showcase-item">
-                    <img src="" alt="">
+                    <div class="project-showcase-item--image">
+                        <img src="" alt="Image">
+                        <p>Image Label</p>
+                    </div>
                     <div class="project-showcase-item--text">
                         <h3>Project</h3>
                         <p>Description</p>
@@ -70,11 +85,24 @@
             </div>
             
             <div class="contact-form" id="contact">
-                <div class="contact-form-info">
-                    
+                <div class="section-heading">
+                    <h1>Get in Touch</h1>
                 </div>
-                <form action="">
-
+                <div class="contact-form-info">
+                    <p>Wanna contact me? Then hurry up and do it already.</p>
+                    <p><b>+44 7955 843301</b></p>
+                    <p><b><small>hrayres1@gmail.com</small></b></p>
+                    <p>No spam.</p>
+                </div>
+                <form onsubmit="">
+                    <div class="contact-box-names">
+                        <input type="text" id="contact-field-firstname" required type="text" placeholder="First Name">
+                        <input type="text" id="contact-field-surname" required type="text" placeholder="Second Name">
+                    </div>
+                    <input type="email" id="contact-field-email" required placeholder="Email Address">
+                    <input type="text" id="contact-field-subject" required placeholder="Title">
+                    <textarea id="contact-field-message" placeholder="Your Message"></textarea>
+                    <button type="submit" id="contact-form-submit">Submit</button>
                 </form>
             </div>
 
@@ -82,8 +110,11 @@
     
         <footer>
             <div class="footer-to-top">
-                <div><!-- arrow icon --></div>
+                <span><!-- arrow icon --></span>
                 <p>Back to Top</p>
+            </div>
+            <div class="footer-text">
+                <p>Harry Ayres, 2025</p>
             </div>
         </footer>
     </body>
