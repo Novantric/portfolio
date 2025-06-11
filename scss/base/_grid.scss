@@ -1,1 +1,23 @@
 // Layout grid
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "navbar"
+    "main"
+    "footer";
+
+    @media (min-width: $screen-small) {
+        grid-template-columns: 200px auto;
+        grid-template-areas: 
+        "navbar main"
+        "navbar main"
+        "navbar footer";
+    }
+}
+
+header { grid-area: navbar; }
+main { grid-area: main; }
+footer { grid-area: footer; }
+

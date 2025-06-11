@@ -1,0 +1,11 @@
+$button-background-primary: linear-gradient(0deg,rgba(212, 106, 0, 1) 0%, rgba(196, 92, 0, 1) 33%, rgba(255, 128, 0, 1) 100%);
+
+button {
+    background-image: $button-background-primary;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $colour-font-primary;            
+    // box-shadow: 0 0 20px #eee;
+    border-radius: 25px;
+}

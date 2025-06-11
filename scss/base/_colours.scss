@@ -1,1 +1,10 @@
-// COLOUR CODES
+// BACKGROUND THEMING
+body {
+	color: $colour-font-primary;
+
+	background-color: #000000;
+	background-image:  repeating-linear-gradient(45deg, #050200 25%, transparent 25%, transparent 75%, #050200 75%, #050200), repeating-linear-gradient(45deg, #050200 25%, #000000 25%, #000000 75%, #050200 75%, #050200);
+	background-position: 0 0, 10px 10px;
+	background-size: 20px 20px;
+}
+
