@@ -1,10 +1,51 @@
-// BACKGROUND THEMING
-body {
-	color: $colour-font-primary;
+// COLOURS
+$colour-accent--primary: #ed5b00;
+$colour-accent--secondary: #ff6302;
+$colour-accent--tertiary:#ee7225;
 
-	background-color: #000000;
-	background-image:  repeating-linear-gradient(45deg, #050200 25%, transparent 25%, transparent 75%, #050200 75%, #050200), repeating-linear-gradient(45deg, #050200 25%, #000000 25%, #000000 75%, #050200 75%, #050200);
-	background-position: 0 0, 10px 10px;
-	background-size: 20px 20px;
-}
+$colour-button-suggested: #3483e6;
+$colour-button-suggested--hover: darken($colour-button-suggested, 60%);
+$colour-button-destructive: #e11b25;
+$colour-button-destructive--hover: darken($colour-button-destructive, 60%);
 
+// LIGHT THEME
+$colour-light-text: #2f2f34;
+$colour-light-text--unimportant: #9b9b9d;
+$colour-light-text--link: $colour-accent--tertiary;
+$colour-light-text--link-hover: $colour-accent--primary;
+
+$colour-light-background: #fafafa;
+$colour-light-background--secondary: #f2f2f2;
+
+$colour-light-element-background: white;
+
+$colour-light-button: #38383b;
+$colour-light-button--hover: #ececed;
+$colour-light-button--selected: #e6e6e7;
+$colour-light-button--hoverselected: #e1e1e2;
+$colour-light-button--hoverselectedclicked: #c7c7ca;
+
+$colour-light-divider: #e0e0e1;
+
+$colour-light-icon: #2f2f34;
+
+// DARK THEME (DEFAULT)
+$colour-dark-text: white;
+$colour-dark-text--unimportant: #a3a3a3;
+$colour-dark-text--link: $colour-accent--tertiary;
+$colour-dark-text--link-hover: $colour-accent--primary;
+
+$colour-dark-background: #222226;
+$colour-dark-background--secondary: #28282c;
+
+$colour-dark-element-background: #333333;
+
+$colour-dark-button: #38383b;
+$colour-dark-button--hover: #3d3d40;
+$colour-dark-button--selected: #424246;
+$colour-dark-button--hoverselected: #49494d;
+$colour-dark-button--hoverselectedclicked: #555559;
+
+$colour-dark-divider: #545457;
+
+$colour-dark-icon: white;
