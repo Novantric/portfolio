@@ -1,8 +1,7 @@
 .container {
-    height: 100%;
-    max-width: em(990px);
+    max-width: em($screen-large);
     margin: 0 auto;
-    padding: 0 em(15px) 0 em(15px);
+    padding: 0 15px 0 15px;
 
     @media (min-width: $screen-small) {
         // width: calc($screen-small - 20px);

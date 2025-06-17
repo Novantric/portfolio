@@ -1,11 +1,18 @@
-button {
+button, input[type="submit"] {
+    @include elementOutline();    
+
     color: $colour-dark-text;
     background-color: $colour-dark-button;
 
-    padding: 13px 30px;
+    padding: 12px 30px;
 
     border-radius: 30px;
     border: none;
+
+    font-weight: 600;
+
+    transition: ease-in-out 0.2s;
+
 
     &:hover {
         background-color: $colour-dark-button--hover;

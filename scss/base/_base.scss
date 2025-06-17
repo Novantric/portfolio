@@ -6,4 +6,9 @@
 body {
 	color: $colour-dark-text;
 	background-color: $colour-dark-background;
+
+	&::selection {
+		color: white;
+		background-color: $colour-accent--tertiary;
+	}
 }
