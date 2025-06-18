@@ -4,20 +4,88 @@ button, input[type="submit"] {
     color: $colour-dark-text;
     background-color: $colour-dark-button;
 
-    padding: 12px 30px;
-
-    border-radius: 30px;
     border: none;
 
     font-weight: 600;
 
-    transition: ease-in-out 0.2s;
-
+    transition: ease-in-out 0.14s;
 
     &:hover {
-        background-color: $colour-dark-button--hover;
+        background-color: lighten($colour-dark-button, 5%);
     }
     &:active {
-        background-color: $colour-dark-button--selected;
+        background-color: lighten($colour-dark-button, 10%);
     }
+}
+
+
+.button-major {
+    padding: 12px 30px;
+    border-radius: 30px;
+}
+
+.button-minor {
+    border-radius: 10px;
+    padding: 8px 11px;
+    margin: 10px;
+}
+
+.button-icon {
+    //Small icon only buttons
+    padding: 10px;
+    border-radius: 20px;
+    min-width: 40px;
+}
+
+.button-group {
+    display: flex; 
+
+    button {
+        padding: 8px 11px;
+        border-radius: 0;
+
+        &:first-child {
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-right: 1px solid $colour-dark-divider;
+        }
+
+        &:last-child {
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        // inbetween buttons
+        &:not(:first-child):not(:last-child) {
+            border-radius: 0;
+            border-right: 1px solid $colour-dark-divider;
+        }
+
+        // single button
+        &:first-child:last-child {
+            border-radius: 10px;
+        }
+    }
+}
+
+
+// Button colour themes
+.button-theme-nobg {
+    background-color: #ffffff00;
+}
+
+.button-theme-accent {
+    @include buttonColour($colour-accent--primary);
+}
+
+.button-theme-confirm {
+    @include buttonColour($colour-button-confirm);
+}
+
+.button-theme-suggest {
+    @include buttonColour($colour-button-suggested);
+}
+
+.button-theme-warn {
+    @include buttonColour($colour-button-destructive);
 }

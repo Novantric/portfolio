@@ -4,9 +4,8 @@ $colour-accent--secondary: #ff6302;
 $colour-accent--tertiary:#ee7225;
 
 $colour-button-suggested: #3483e6;
-$colour-button-suggested--hover: darken($colour-button-suggested, 60%);
+$colour-button-confirm: #007c3d;
 $colour-button-destructive: #e11b25;
-$colour-button-destructive--hover: darken($colour-button-destructive, 60%);
 
 // LIGHT THEME
 $colour-light-text: #2f2f34;
@@ -41,10 +40,6 @@ $colour-dark-background--secondary: #28282c;
 $colour-dark-element-background: #333333;
 
 $colour-dark-button: #38383b;
-$colour-dark-button--hover: #3d3d40;
-$colour-dark-button--selected: #424246;
-$colour-dark-button--hoverselected: #49494d;
-$colour-dark-button--hoverselectedclicked: #555559;
 
 $colour-dark-divider: #545457;
 
