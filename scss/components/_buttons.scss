@@ -2,19 +2,19 @@ button, input[type="submit"] {
     @include elementOutline();    
 
     color: $colour-dark-text;
-    background-color: $colour-dark-button;
 
     border: none;
 
     font-weight: 600;
 
-    transition: ease-in-out 0.14s;
+    transition: background-color ease-in-out 0.14s;
 
+    background-color: #ffffff1a;
     &:hover {
-        background-color: lighten($colour-dark-button, 5%);
+        background-color: #ffffff2a;
     }
     &:active {
-        background-color: lighten($colour-dark-button, 10%);
+        background-color: #ffffff4a;
     }
 }
 
@@ -72,6 +72,17 @@ button, input[type="submit"] {
 // Button colour themes
 .button-theme-nobg {
     background-color: #ffffff00;
+}
+
+// Important to overwrite any previous styles
+.button-theme-solid {
+    background-color: $colour-dark-button !important;
+    &:hover {
+        background-color: lighten($colour-dark-button, 5%) !important;
+    }
+    &:active {
+        background-color: lighten($colour-dark-button, 10%) !important;
+    }
 }
 
 .button-theme-accent {

@@ -1,12 +1,7 @@
 @mixin elementOutline {
     &:focus-visible {
         z-index: 20;
-        transition: none;
         outline: 2px solid $colour-accent--tertiary;
-        outline-offset: 1px;
-
-        animation: fadeInOutline 0.3s ease-out forwards;
-
     }
 }
 
