@@ -8,3 +8,18 @@
     display: none;
     transition: ease-in-out 1s;
 }
+
+#aside-menu {
+    z-index: 20;
+    position: fixed;
+
+    top: 15px;
+    left: 15px;
+    transition: ease-in-out 1s;
+
+    display: none;
+
+    @media (max-width: $screen-medium) {
+        display: block;
+    }
+}

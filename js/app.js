@@ -11,3 +11,19 @@ function updateButtonVisibility() {
 
 window.addEventListener("scroll", updateButtonVisibility);
 updateButtonVisibility();
+
+// Header sidebar show/hide button
+function toggleSidebar() {
+    const sidebar = document.getElementById('header')
+
+    sidebar.classList.toggle('showHeader');
+
+    // Prevent tabbing through items with inert atrb
+    if (sidebar.classList.contains('showSidebar')) {
+        document.body.classList.add('sidebar-open');
+        mainContent.forEach(element => element.inert = true);
+    } else {
+        document.body.classList.remove('sidebar-open');
+        mainContent.forEach(element => element.inert = false);
+    }
+}

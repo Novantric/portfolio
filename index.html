@@ -14,7 +14,12 @@
     </head>
     
     <body>
-        <header>
+        <header id="header">
+            <div class="nav-headerbar">
+                <button class="button-icon button-theme-nobg">Theme</button>
+                <p>Title</p>
+                <button class="button-icon button-theme-nobg">Nav</button>
+            </div>
             <div class="nav-links">
                 <ul>
                     <li class="nav-link-item"><a href="#about">Who am I?</a></li>
@@ -126,6 +131,7 @@
     
         <aside>
             <form id="aside-to-top" action="#"><input type="submit" class="button-icon button-theme-solid" value="U"/></form>
+            <button id="aside-menu" onclick="toggleSidebar()" class="button-icon button-theme-solid">M</button>
         </aside>
 
         <footer>

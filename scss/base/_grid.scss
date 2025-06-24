@@ -2,25 +2,41 @@
 
 body {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, min(25%, 280px)) 1fr;
     grid-template-areas: 
-    "navbar"
-    "main"
-    "footer";
+    "navbar main"
+    "navbar footer";
 
-    @media (min-width: $screen-small) {
-        grid-template-columns: 100px auto;
+    @media (max-width: $screen-medium) {
+        grid-template-columns: 1fr;
         grid-template-areas: 
-        "navbar main"
-        "navbar main"
-        "navbar footer";
-    }
-    @media (min-width: $screen-large) {
-        grid-template-columns: 200px auto;
+        "main"
+        "footer";
     }
 }
 
-header { grid-area: navbar; }
-main { grid-area: main; }
+header {
+    grid-area: navbar;
+    position: fixed;
+    z-index: 10;
+
+    height: 100%;
+    width: min(25%, 280px);
+
+    @media (max-width: $screen-medium) {
+        width: 80%;
+        max-width: 280px;
+        left: -100%;
+    }
+
+    transition: left 300ms ease-out;
+}
+
+// Hiding/showing the header bar
+.showHeader {
+    left: 0;
+}
+
+main { grid-area: main; min-width: 0; }
 footer { grid-area: footer; }
 
