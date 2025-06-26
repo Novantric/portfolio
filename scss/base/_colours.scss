@@ -1,0 +1,46 @@
+// COLOURS
+$colour-accent--primary: #ed5b00;
+$colour-accent--secondary: #ff6302;
+$colour-accent--tertiary:#ee7225;
+
+$colour-button-suggested: #3483e6;
+$colour-button-confirm: #007c3d;
+$colour-button-destructive: #e11b25;
+
+// LIGHT THEME
+$colour-light-text: #2f2f34;
+$colour-light-text--unimportant: #9b9b9d;
+$colour-light-text--link: $colour-accent--tertiary;
+$colour-light-text--link-hover: $colour-accent--primary;
+
+$colour-light-background: #fafafa;
+$colour-light-background--secondary: #f2f2f2;
+
+$colour-light-element-background: white;
+
+$colour-light-button: #38383b;
+$colour-light-button--hover: #ececed;
+$colour-light-button--selected: #e6e6e7;
+$colour-light-button--hoverselected: #e1e1e2;
+$colour-light-button--hoverselectedclicked: #c7c7ca;
+
+$colour-light-divider: #e0e0e1;
+
+$colour-light-icon: #2f2f34;
+
+// DARK THEME (DEFAULT)
+$colour-dark-text: white;
+$colour-dark-text--unimportant: #a3a3a3;
+$colour-dark-text--link: $colour-accent--tertiary;
+$colour-dark-text--link-hover: $colour-accent--primary;
+
+$colour-dark-background: #222226;
+$colour-dark-background--secondary: #28282c;
+
+$colour-dark-element-background: #333333;
+
+$colour-dark-button: #38383b;
+
+$colour-dark-divider: #545457;
+
+$colour-dark-icon: white;

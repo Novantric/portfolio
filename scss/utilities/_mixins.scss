@@ -1,0 +1,17 @@
+@mixin elementOutline {
+    &:focus-visible {
+        z-index: 20;
+        outline: 2px solid $colour-accent--tertiary;
+    }
+}
+
+@mixin buttonColour($colour) {
+    background-color: $colour;
+
+    &:hover {
+        background-color: darken($colour, 5%);
+    }
+    &:active {
+        background-color: darken($colour, 10%);
+    }
+}

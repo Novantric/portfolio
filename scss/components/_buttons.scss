@@ -1,0 +1,102 @@
+button, input[type="submit"] {
+    @include elementOutline();    
+
+    color: $colour-dark-text;
+
+    border: none;
+
+    font-weight: 600;
+
+    transition: background-color ease-in-out 0.14s;
+
+    background-color: #ffffff1a;
+    &:hover {
+        background-color: #ffffff2a;
+    }
+    &:active {
+        background-color: #ffffff4a;
+    }
+}
+
+
+.button-major {
+    padding: 12px 30px;
+    border-radius: 30px;
+}
+
+.button-minor {
+    border-radius: 10px;
+    padding: 8px 11px;
+    margin: 10px;
+}
+
+.button-icon {
+    //Small icon only buttons
+    padding: 10px;
+    border-radius: 20px;
+    min-width: 40px;
+}
+
+.button-group {
+    display: flex; 
+
+    button {
+        padding: 8px 11px;
+        border-radius: 0;
+
+        &:first-child {
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-right: 1px solid $colour-dark-divider;
+        }
+
+        &:last-child {
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        // inbetween buttons
+        &:not(:first-child):not(:last-child) {
+            border-radius: 0;
+            border-right: 1px solid $colour-dark-divider;
+        }
+
+        // single button
+        &:first-child:last-child {
+            border-radius: 10px;
+        }
+    }
+}
+
+
+// Button colour themes
+.button-theme-nobg {
+    background-color: #ffffff00;
+}
+
+// Important to overwrite any previous styles
+.button-theme-solid {
+    background-color: $colour-dark-button !important;
+    &:hover {
+        background-color: lighten($colour-dark-button, 5%) !important;
+    }
+    &:active {
+        background-color: lighten($colour-dark-button, 10%) !important;
+    }
+}
+
+.button-theme-accent {
+    @include buttonColour($colour-accent--primary);
+}
+
+.button-theme-confirm {
+    @include buttonColour($colour-button-confirm);
+}
+
+.button-theme-suggest {
+    @include buttonColour($colour-button-suggested);
+}
+
+.button-theme-warn {
+    @include buttonColour($colour-button-destructive);
+}

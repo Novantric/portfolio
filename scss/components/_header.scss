@@ -1,0 +1,25 @@
+header {
+    background: $colour-dark-background--secondary;
+
+    border-right: 1px solid darken($colour-dark-background, 5%);
+}
+
+.nav-headerbar {
+    display: flex;
+    justify-content: space-between;
+    text-wrap: wrap;
+
+    background-color: $colour-dark-background--secondary;
+    margin: 5px 5px 0 5px;
+
+    button {
+    }
+    p {
+        font-weight: 600;
+    }
+
+}
+
+.header-sidebar {
+    
+}

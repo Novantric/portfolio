@@ -1,0 +1,25 @@
+// IMPORT FONTS
+@font-face {
+    font-family: Adwaita Sans;
+    src: url(/assets/fonts/AdwaitaSans-Regular.ttf);
+}
+
+body {
+    font-family: Adwaita Sans, Arial, sans-serif;
+}
+
+// Base Styles
+
+p {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+a {
+    color: $colour-accent--tertiary;
+}
+
+sub {
+    font-size: 13px;
+    color: $colour-dark-text--unimportant;
+}

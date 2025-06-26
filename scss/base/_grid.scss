@@ -1,0 +1,50 @@
+// Layout grid
+
+body {
+    display: grid;
+    grid-template-columns: minmax(0, min(25%, 280px)) 1fr;
+    grid-template-areas: 
+    "navbar main"
+    "navbar footer";
+
+    @media (max-width: $screen-medium) {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "main"
+        "footer";
+    }
+}
+
+header {
+    grid-area: navbar;
+    position: fixed;
+    z-index: 10;
+
+    height: 100%;
+    width: min(25%, 280px);
+
+    @media (max-width: $screen-medium) {
+        width: 80%;
+        max-width: 280px;
+        left: -220px;
+    }
+
+    transition: left 300ms ease-out;
+}
+
+// Show the header bar
+.showHeader {
+    left: 0;
+}
+
+main {
+    grid-area: main;
+    min-width: 0;
+
+    @media (max-width: $screen-medium) {
+        position:relative;
+        right: 20px;
+    }
+}
+footer { grid-area: footer; }
+
