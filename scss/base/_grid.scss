@@ -2,17 +2,10 @@
 
 body {
     display: grid;
-    grid-template-columns: minmax(0, min(25%, 280px)) 1fr;
+    grid-template-columns: minmax(0, min(25%, 280px)) auto;
     grid-template-areas: 
     "navbar main"
     "navbar footer";
-
-    @media (max-width: $screen-medium) {
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "main"
-        "footer";
-    }
 }
 
 header {
@@ -26,17 +19,25 @@ header {
     @media (max-width: $screen-medium) {
         width: 80%;
         max-width: 280px;
-        left: -100%;
+        left: -220px;
     }
 
     transition: left 300ms ease-out;
 }
 
-// Hiding/showing the header bar
+// Show the header bar
 .showHeader {
     left: 0;
 }
 
-main { grid-area: main; min-width: 0; }
+main {
+    grid-area: main;
+    min-width: 0;
+
+    @media (max-width: $screen-medium) {
+        position:relative;
+        right: 20px;
+    }
+}
 footer { grid-area: footer; }
 

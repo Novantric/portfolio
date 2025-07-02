@@ -1,0 +1,49 @@
+header {
+    background: $colour-dark-background--secondary;
+
+    border-right: 1px solid darken($colour-dark-background, 5%);
+}
+
+.nav-headerbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-color: $colour-dark-background--secondary;
+    margin: 5px 5px 0 5px;
+
+    button {
+        height: fit-content;
+        margin-top: auto;
+    }
+    p {
+        margin-top: -5px;
+        font-weight: 600;
+    }
+
+}
+
+.nav-links ul {
+    padding: 0;
+    margin: 20px 0 20px 0;
+    gap: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.nav-link-item {
+    @include elementOutline();
+    list-style-type: none;
+
+    width: 200px;
+    height: 50px;
+
+    border-radius: 30px;
+
+}

@@ -9,24 +9,23 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
+        <link rel="stylesheet" href="./assets/icon/style.css">
         <link rel="stylesheet" href="./css/application.css">
         <script src="./js/app.js" type="text/javascript" defer></script>
     </head>
-    
     <body>
         <header id="header">
             <div class="nav-headerbar">
                 <button class="button-icon button-theme-nobg">Theme</button>
                 <p>Title</p>
-                <button class="button-icon button-theme-nobg">Nav</button>
+                <button onclick="toggleSidebar()" class="button-icon button-theme-nobg">Nav</button>
             </div>
             <div class="nav-links">
                 <ul>
-                    <li class="nav-link-item"><a href="#about">Who am I?</a></li>
-                    <li class="nav-link-item"><a href="#portfolio">Portfolio</a></li>
-                    <!-- Show code examples on popup in portfolio -->
-                    <li class="nav-link-item nav-link-external"><a href="https://www.netmatters.co.uk/train-for-a-career-in-tech">SCS Scheme</a></li>
-                    <li class="nav-link-item nav-link-highlight"><a href="#contact">Contact</a></li>
+                    <li><form action="#about"><input id="nav-about" type="submit" class="nav-link-item button-theme-solid" value="Who am I?"/><span class="nav-icon icon-question"></span></form></li>
+                    <li><form action="#portfolio"><input id="nav-portfolio" type="submit" class="nav-link-item button-theme-solid" value="Portfolio"/><span class="nav-icon icon-embed2"></span></form></li>
+                    <li><form action="https://www.netmatters.co.uk/train-for-a-career-in-tech"><input id="nav-scs" type="submit" class="nav-link-item nav-link-external button-theme-solid" value="SCS Scheme"/><span class="nav-icon icon-sphere"></span></form></li>
+                    <li><form action="#contact"><input id="nav-contact" type="submit" class="nav-link-item nav-link-highlight button-theme-solid" value="Contact"/><span class="nav-icon icon-envelop"></span></form></li>
                 </ul>
             </div>
             <div class="nav-socials">
